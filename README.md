@@ -1,4 +1,4 @@
-# 🌀 PCT: Point Cloud Transformer
+# PCT: Point Cloud Transformer
 
 `pct` is a simple PyTorch-based package for learning latent representations from 3D point clouds.  
 It includes a minimal **Point Cloud Transformer (PCT)** model, dataset utilities, and training scripts.  
@@ -6,7 +6,7 @@ The latent embeddings can be used for regression or other downstream tasks.
 
 ---
 
-## 🚀 Features
+## Features
 - Dummy point cloud dataset generator (noisy spheres with variable radius).
 - Collate functions for batching point clouds.
 - Transformer-based point cloud encoder with regression head.
@@ -15,7 +15,7 @@ The latent embeddings can be used for regression or other downstream tasks.
 
 ---
 
-## 📦 Installation
+## Installation
 
 Clone the repo and install locally:
 
