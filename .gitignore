@@ -1,3 +1,4 @@
 dist/
 pct.egg-info/
 build/
+.DS_Store
