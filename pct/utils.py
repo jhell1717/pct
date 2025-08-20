@@ -1,16 +1,9 @@
 from __future__ import annotations
 
-import math
-import random
-from dataclasses import dataclass
-from typing import Optional, Tuple
-
 import plotly.graph_objects as go
 
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torch.utils.data import Dataset, DataLoader
+
 
 def index_points(points: torch.Tensor, idx: torch.Tensor) -> torch.Tensor:
     """Gather points/features by index.

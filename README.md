@@ -15,6 +15,11 @@ The latent embeddings can be used for regression or other downstream tasks.
 
 ---
 
+## Use Cases:
+* Example 1: Given a 3D point cloud from an object, classify the object into a lifing category, e.g., 'healthy', 'degraded', 'failure'.
+    * In aerospace applications, this may enable point clouds obtained from scans to be used to train a model that categorises components such that they can be batched appropriately, or maintained accordingly.
+* Example 2: Given a point cloud represenation of a component, classify this component as geometrically suitable for a manufacturing method such as 'TRUE' or 'FALSE'.
+
 ## Installation
 
 Clone the repo and install locally:
