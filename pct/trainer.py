@@ -12,21 +12,6 @@ from torch.utils.data import Dataset, DataLoader
 
 from .model import PointCloudTransformer
 
-
-@dataclass
-class TrainConfig:
-    epochs: int = 10
-    batch_size: int = 16
-    lr: float = 3e-4
-    d_model: int = 128
-    depth: int = 4
-    n_heads: int = 4
-    k: int = 16
-    latent_dim: int = 256
-    out_dim: int = 1
-    drop: float = 0.0
-
-
 def train_regression(model: PointCloudTransformer, train_loader: DataLoader, val_loader: Optional[DataLoader] = None,
                      epochs: int = 10, lr: float = 3e-4, device: str = 'cuda' if torch.cuda.is_available() else 'cpu'):
     model.to(device)
