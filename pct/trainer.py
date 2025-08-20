@@ -12,9 +12,6 @@ from torch.utils.data import Dataset, DataLoader
 
 from .model import PointCloudTransformer
 
-# -------------------------------
-# Training & Latent Extraction
-# -------------------------------
 
 @dataclass
 class TrainConfig:

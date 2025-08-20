@@ -23,3 +23,7 @@ Clone the repo and install locally:
 git clone https://github.com/your-username/pct.git
 cd pct
 pip install .
+``` 
+
+## Citations
+https://arxiv.org/pdf/2012.09688
