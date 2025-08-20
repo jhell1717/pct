@@ -5,12 +5,13 @@ import random
 from dataclasses import dataclass
 from typing import Optional, Tuple
 
-from .utils import knn_indices, index_points
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
+
+from .utils import knn_indices, index_points
 
 class RelPosEncoding(nn.Module):
     def __init__(self, d_model: int, hidden: int = 64):
@@ -150,7 +151,6 @@ class GlobalReadout(nn.Module):
         max_pool = per_point.max(dim=1).values
         global_feat = torch.cat([mean_pool, max_pool], dim=-1)
         return self.proj(global_feat)  # (B, latent_dim)
-
 
 class PointCloudTransformer(nn.Module):
     def __init__(self, in_channels: int = 3, d_model: int = 128, depth: int = 4, n_heads: int = 4, k: int = 16,
